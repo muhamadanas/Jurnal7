@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/diaryFragment">
+
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="org.d3if4026.diary.diary.DiaryFragment"
+        android:label="fragment_diary"
+        tools:layout="@layout/fragment_diary" >
+        <action
+            android:id="@+id/action_diaryFragment_to_diaryCreate"
+            app:destination="@id/diaryCreate" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryCreate"
+        android:name="org.d3if4026.diary.creatediary.DiaryCreate"
+        android:label="fragment_diary_create"
+        tools:layout="@layout/fragment_diary_create" />
+</navigation>
